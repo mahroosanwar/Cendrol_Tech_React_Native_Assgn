@@ -1,79 +1,43 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Project Name
+# Cendrol Technologies React Native Assignments 
+## Description
 
-# Getting Started
+This React Native project is an app that fetches TV show data from the API 'https://api.tvmaze.com/search/shows?q=all/' and displays it in a user-friendly manner. The app utilizes Flatlist, which efficiently renders the TV show list on the home page, providing essential details such as show name, show cover, runtime, and show rating. When a user clicks on a show item, they are navigated to the details screen, where they can view comprehensive information about the show, including rating, genre, runtime, language, country, streaming day, and a brief description.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Screenshots
 
-## Step 1: Start the Metro Server
+### Home Shows List
+![Home Shows List 1](https://i.postimg.cc/MZ54bT8b/Home-Shows-List-1.png)
+![Home Shows List 2](https://i.postimg.cc/HsLNSgYG/Home-Shows-List-2.png)
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+### Show Details
+![Show Details 1](https://i.postimg.cc/hP3565vX/Show-Details-1.png)
+![Show Details 2](https://i.postimg.cc/1Xvj9WKY/Show-Details-2.png)
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Features
 
-```bash
-# using npm
-npm start
+- Fetches TV show data from the API 'https://api.tvmaze.com/search/shows?q=all/'.
+- Utilizes Flatlist to efficiently render the TV show list on the home page, ensuring smooth scrolling and improved performance.
+- Home page displays important show details like show name, show cover, runtime, and show rating.
+- Allows users to click on a show item to navigate to the details screen.
+- The details screen provides comprehensive information about the show, including rating, genre, runtime, language, country, streaming day, and a brief description.
+- The code follows the latest coding standards and aims to closely match the design.
+- Utilizes a component-based approach for better organization and maintainability.
+- Navigation between different screens is achieved using the 'react-navigation' package.
+- Implements state management using Redux, with a clear distinction between the store, actions, and reducers.
 
-# OR using Yarn
-yarn start
-```
+## How Flatlist Enhances User Experience
 
-## Step 2: Start your Application
+Flatlist efficiently renders the TV show list, even with large datasets, improving app performance. It dynamically loads data as the user scrolls, reducing resource consumption and enhancing user experience.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+## Redux Overview
 
-### For Android
+Redux is employed for state management. It consists of three components:
 
-```bash
-# using npm
-npm run android
+1. **Store**: Single source of truth for the app's state.
 
-# OR using Yarn
-yarn android
-```
+2. **Action**: Plain JavaScript objects describing events in the app.
 
-### For iOS
+3. **Reducer**: Pure functions specifying state changes in response to actions.
 
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Redux ensures a predictable flow of data, enhancing code maintainability and scalability.
