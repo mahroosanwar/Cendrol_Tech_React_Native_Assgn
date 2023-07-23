@@ -4,6 +4,14 @@
 
 This React Native project is an app that fetches TV show data from the API 'https://api.tvmaze.com/search/shows?q=all/' and displays it in a user-friendly manner. The app utilizes Flatlist, which efficiently renders the TV show list on the home page, providing essential details such as show name, show cover, runtime, and show rating. When a user clicks on a show item, they are navigated to the details screen, where they can view comprehensive information about the show, including rating, genre, runtime, language, country, streaming day, and a brief description.
 
+## APK Link
+
+[Download APK](https://drive.google.com/file/d/1uTFWqMrBqK_bJBlxUze5tJquzCg8XZqf/view?usp=drive_link)
+
+## Drive Video Link of App
+
+[Watch App Video](https://drive.google.com/file/d/1fcKcvN31mhmVKb5odtUpRO1VTW6esyAN/view?usp=sharing)
+
 ## Screenshots
 
 ### Home Shows List
