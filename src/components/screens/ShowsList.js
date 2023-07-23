@@ -91,6 +91,7 @@ const ShowsList = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#234EB0',
+    // flex: 1,
   },
   headingText: {
     fontSize: 22,
@@ -103,10 +104,11 @@ const styles = StyleSheet.create({
   },
   card: {
     // height: 360,
-    width: 350,
+    width: "90%",
     borderRadius: 6,
     marginVertical: 12,
-    marginHorizontal: 30,
+    // marginHorizontal: 30,
+    alignSelf: "center",
   },
   cardElevated: {
     // backgroundColor: '#FFFFFF',
